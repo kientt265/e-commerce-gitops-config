@@ -19,7 +19,7 @@ spec:
         service_type: event-driven
       containers:
       - name: delivery-service
-        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/delivery-service:latest
+        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/delivery-service:refresh-code-8
         resources:
           requests:
             memory: "128Mi"
