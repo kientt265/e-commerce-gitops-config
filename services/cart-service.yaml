@@ -19,7 +19,7 @@ spec:
         service_type: api-based
       containers:
       - name: cart-service
-        image: <your-aws-account-id>.dkr.ecr.us-east-1.amazonaws.com/cart-service:latest
+        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/cart-service:latest
         resources:
           requests:
             memory: "128Mi"
