@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: zookeeper
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   clusterIP: None
   ports:
@@ -14,6 +16,8 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: zookeeper
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   serviceName: "zookeeper"
   replicas: 1
@@ -53,6 +57,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: kafka
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   clusterIP: None
   ports:
@@ -65,6 +71,8 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: kafka
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   serviceName: "kafka"
   replicas: 2

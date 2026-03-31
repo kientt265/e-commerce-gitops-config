@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: auth-db
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   serviceName: "auth-db"
   replicas: 1
@@ -43,6 +45,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: auth-db
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   selector:
     app: auth-db

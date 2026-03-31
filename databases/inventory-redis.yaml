@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: inventory-redis
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
   labels:
     app: inventory-redis
 spec:
@@ -33,6 +35,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: inventory-redis
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   selector:
     app: inventory-redis
