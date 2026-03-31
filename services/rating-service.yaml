@@ -21,7 +21,7 @@ spec:
         service_type: api-based
       containers:
       - name: rating-service
-        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/rating-service:latest
+        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/rating-service:refresh-code-1
         resources:
           requests:
             memory: "128Mi"

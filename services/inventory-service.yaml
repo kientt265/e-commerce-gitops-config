@@ -21,7 +21,7 @@ spec:
         service_type: event-driven
       containers:
       - name: inventory-service
-        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/inventory-service:latest
+        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/inventory-service:refresh-code-1
         resources:
           requests:
             memory: "128Mi"
