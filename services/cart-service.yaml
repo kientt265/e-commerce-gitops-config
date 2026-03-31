@@ -19,7 +19,7 @@ spec:
         service_type: api-based
       containers:
       - name: cart-service
-        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/cart-service:refresh-code-1
+        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/cart-service:refresh-code-7
         resources:
           requests:
             memory: "128Mi"
