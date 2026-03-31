@@ -19,7 +19,7 @@ spec:
         service_type: api-based
       containers:
       - name: auth-service
-        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/auth-service:refresh-code-3
+        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/auth-service:refresh-code-4
         resources:
           requests:
             memory: "128Mi"
