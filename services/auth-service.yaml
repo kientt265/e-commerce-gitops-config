@@ -21,7 +21,7 @@ spec:
         service_type: api-based
       containers:
       - name: auth-service
-        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/auth-service:refresh-code-5
+        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/auth-service:latest
         resources:
           requests:
             memory: "128Mi"
@@ -35,8 +35,8 @@ spec:
         - name: DATABASE_URL
           valueFrom:
             secretKeyRef:
-              name: db-secrets
-              key: auth-db-url
+              name: auth-db-secret
+              key: DATABASE_URL
         - name: AUTH_PORT
           value: "3001"
 ---
