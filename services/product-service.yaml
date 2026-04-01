@@ -21,7 +21,7 @@ spec:
         service_type: api-based
       containers:
       - name: product-service
-        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/product-service:latest
+        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/product-service:refresh-code-6
         resources:
           requests:
             memory: "128Mi"

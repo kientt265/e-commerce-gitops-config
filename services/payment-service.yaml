@@ -21,7 +21,7 @@ spec:
         service_type: event-driven
       containers:
       - name: payment-service
-        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/payment-service:latest
+        image: 582719176716.dkr.ecr.ap-southeast-1.amazonaws.com/payment-service:refresh-code-6
         resources:
           requests:
             memory: "128Mi"
